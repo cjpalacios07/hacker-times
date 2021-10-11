@@ -4,47 +4,195 @@
   remember to be explcit
   use classes, ids, etc so you don't conflict
  */
-ol {
-    list-style-type: none;
+#html {
+  width: 25%;
+  padding-top: 5px;
+}
+
+.tabs-spacesarticle p {
+  font-family: Source Sans Pro;
+  color: #777;
+  margin-left: 0.5em;
+  margin-right: 0.4em;
+  box-decoration-break: slice;
+  box-shadow: 0px 0xp 2px #777;
+  padding-bottom: 3px;
+  border-right: 1px solid #777;
+  border-bottom: 1px solid #777;
+} 
+
+.tabs-spacesarticle {
+  display: inline-block;
+  width: 85%;
+  font-family: Source Sans Pro;
+  color: #777;
+  margin-left: 0.5em;
+  margin-right: 0.4em;
+  
+  margin-bottom: 5px #777;
+}
+
+.tabs-spacesarticle img {
+  width: 25%;
+  float: right;
+}
+
+.newspaper-container {
+  width: 700px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px #ddd;
+  padding: 30px;
+  margin: auto;
+  background-color: white;
+}
+body {
+  background-color: #ddd;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  border-bottom: 1px solid #777;
+  border-top: 1px solid #777
+}
+nav li {
+  display: inline;
+  border-radius: 10px;
+  text-align: center;
+}
+nav li a {
+  text-decoration: none;
+  color: rgb(206, 171, 171);
+  font-family: Roboto Slab;
+  font-size: 0.8em;
+  padding-left: 0.3em;
+
 }
 
 header {
-  font: Abril Fatface;
-}
-body { 
-font: Source Sans Pro
+  font-family: Abril Fatface;
 }
 
-h1{
+h1 {
   text-align: center;
-  
+  font-faimly: Roboto Slab;
 }
 
-
-
-main,h2 {
-  
+main h2 {
+  font-family: Roboto Slab;
+  text-align: center;
 }
 
-h4 {
-  
+main img {
+  width: 60%;
+  box-shadow:3px 3px 3px #777;
+  float: right;
+  padding-bottom: 3px;
 }
 
-main,h5 {
+main p {
+  font-family: Source Sans Pro;
+  color: #777;
+  margin-left: 0.5em;
+  margin-right: 0.4em;
+  box-decoration-break: slice;
+  box-shadow: 0px 0xp 2px #777;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #777;
+
+
+}	
+main h5 {
   color: #dd3232;
 }
 
-.extra-articles {
-  text-align: center;
-  margin: 5em;
+
+#harticle-two {
+  text-align: left;
+  font-faimly: Roboto Slab;
+
 }
+
+.caffeine-article h4 {
+  font-family: Roboto Slab;
+  color: #777;
+  font-family: Source San Pro;
+  text-align: justify;
+
+}
+.caffeine-article {
+  font-family: Source Sans Pro;
+  color: #777;
+  margin-left: 0.5em;
+  margin-right: 0.4em;
+  box-decoration-break: slice;
+  box-shadow: 0px 0xp 2px #777;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #777;
+  width: 75%;
+
+}
+.caffeine-article p {
+  color: #777;
+  font-family: Source San Pro;
+  text-align: justify;
   
-
-
+}
+.caffeine-article img {
+  size: 150%;
 }
 
+footer {
+  text-align: center;
+}
 
+.weather-icon {
+  float: right;
+  letter-spacing: 0.15em;
+}
+.tabs-spacesarticle img {
+  width: 100%;
+  box-shadow: 2px 2px 1px #777;
+  
+}
+#article-two {
+  font-size: larger bolder;
+  color: black;
+}
+.tabs-spacesarticle h5 {
+  float: right;
+  font-size: smaller;
+  text-emphasis-position: right;
+  width: 50%;
+  object-position: right;
+}
+.cyber-article {
+  font-family: Source Sans Pro;
+  color: #777;
+  margin-left: 0.5em;
+  margin-right: 0.4em;
+  box-decoration-break: slice;
+  box-shadow: 0px 0xp 2px #777;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #777;
+  width: 85%;
 
+}
+.html-article {
+  font-family: Source Sans Pro;
+  color: #777;
+  margin-left: 0.5em;
+  margin-right: 0.4em;
+  box-decoration-break: slice;
+  box-shadow: 0px 0xp 2px #777;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #777;
+  width: 85%;
+}
+.sports-article img {
+  width: 75%;
+  float: left;
+  padding: 3px 3px 3px;
+}
 
 
 

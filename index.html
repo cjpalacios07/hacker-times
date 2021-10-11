@@ -6,116 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta <title>Hacker Times</title>
-
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap');
-		/* 
-      remember to be explcit
-      use classes, ids, etc so you don't conflict
-
-    */
-		body {
-			background-color: #ddd;
-		}
-
-
-		ul {
-			list-style-type: none;
-			text-align: center;
-			border-bottom: 1px solid #777;
-			border-top: 1px solid #777
-		}
-
-		nav li {
-			display: inline;
-		}
-
-		/* might want to be more specific now that we have a footer*/
-		nav li a {
-			text-decoration: none;
-			color: #777;
-			font-family: Roboto Slab;
-			font-size: 0.8em;
-			padding-left: 0.3em;
-		}
-
-		header {
-			font-family: Abril Fatface;
-		}
-
-		.newspaper-container {
-			width: 700px;
-			border-radius: 30px;
-			box-shadow: 10px 10px 10px #ddd;
-			padding: 30px;
-			margin: auto;
-			background-color: white;
-		}
-
-
-		h1 {
-			text-align: center;
-			font-faimly: Roboto Slab;
-		}
-
-		main h2 {
-			font-family: Roboto Slab;
-		}
-
-		main img {
-			width: 100%;
-		}
-
-		main p {
-			font-family: Source Sans Pro;
-			color: #777;
-			margin-left: 0.5em;
-			margin-right: 0.4em;
-		}
-
-		main h5 {
-			color: #dd3232;
-		}
-
-
-		#hfour-article-two {
-			text-align: left;
-			font-faimly: Roboto Slab;
-
-		}
-
-		.tabs-spacesarticle {
-			display: inline-block;
-			width: 49%;
-			float: left;
-		}
-
-		.tabs-spacesarticle p {
-			color: #777;
-			font-family: Source San Pro;
-		}
-
-		.caffeine-article h4 {
-			font-family: Roboto Slab;
-
-		}
-
-		.caffeine-article p {
-			color: #777;
-			font-family: Source San Pro;
-		}
-
-		footer {
-			text-align: center;
-		}
-
-		.weather-icon {
-			float: right;
-			letter-spacing: 0.15em;
-
-
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
+	
+	
 </head>
 
 
@@ -148,7 +41,7 @@
 			</ul>
 		</nav>
 		<!-- front page article -->
-		<main>
+		<main class="header">
 			<h2>Have You Tried Turning It On and Off Again?</h2>
 			<h5>By Maurice Moss</h5>
 			<img src="assets/front-page-article.png" alt="placeholder">
@@ -159,14 +52,15 @@
     <!-- more articles -->
     <div class="tabs-spacesarticle">
       <section>
-        <h4 id="hfour-article-two">Tabs vs. Spaces</h4>
+        <h2 id="article-two">Tabs vs. Spaces</h2>
+		<h5>Brownie I love cake dragée jelly beans candy canes wafer tiramisu I love. Jelly icing sesame snaps biscuit I love carrot cake cookie.</h5>
         <img src="assets/article-one.png" alt="placeholder">
-        <p>Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly beans soufflé brownie ...</p>
+        <p id="tabs"> <em>Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice.</em> Tootsie roll pastry cake gummi bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly beans soufflé brownie ...</p>
       </section>
     </div>
-    <div class = "caffeine-article">  
+    <div class= "caffeine-article">  
       <section>
-          <h4>How Much Caffeine Is Too Much?</h4>
+          <h3>How Much Caffeine Is Too Much?</h3>
           <img src="assets/article-two.png" alt="placeholder">
           <p>Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly beans soufflé brownie ...</p>
       </section>
@@ -178,19 +72,37 @@
     Add a footer at the bottom with links to learn about the company, careers, etc. Visit other newspaper sites to see what they have in their footers.
     This newspaper design was heavily inspired by The New York Times. Visit its site and try to incorporate more of its design elements into The Hacker Times.
     -->
-    <div class = "extra-articles">
+    <div class= "html-article">
       <section>
-        <h4>Bonus</h4>
-        <img src="assets/article-one.png" 
-        alt="placeholder">
-        <h4>Extra</h4>
-        <article id= "extra-one">Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly beans soufflé brownie ...</article>
-        <h4>Extra</h4>
-        <article id= "extra-two">Cupcake ipsum dolor sit amet. Candy gummies jelly-o pie toffee cheesecake pastry cake. Soufflé sesame snaps tootsie roll jelly-o soufflé tart gummies. Dessert lollipop halvah brownie chocolate bar gingerbread. Lollipop chocolate bar dragée jelly-o cookie tiramisu icing. Dragée muffin marshmallow jelly beans jelly beans. Tootsie roll pie cheesecake. Brownie biscuit gingerbread cupcake sweet roll sweet jelly-o cookie pie. Lemon drops topping lemon drops jelly beans toffee. Tiramisu cotton candy pie toffee cake chocolate cake apple pie. Cupcake bear claw donut apple pie halvah sesame snaps macaroon tootsie roll</article>
-       <h4>Extra</h4>
-        <article id= "extra-three">Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly beans soufflé brownie ...</article>
-      </section>  
-    </div>
+		<h4>Hlml and Css News</h4>
+        <img id= "html" src="assets/article-one.png" alt="placeholder">
+        <p>Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly beans soufflé brownie ...</p>
+	  </section>
+	</div>  
+     <div class= "cyber-article">
+	   <section>
+	 	 <h4>Cyber Security Tips</h4>
+		<img id= "cyber" src="assets/front-page-article.png" alt="placeholder">
+        <p>Brownie I love cake dragée jelly beans candy canes wafer tiramisu I love. Jelly icing sesame snaps biscuit I love carrot cake cookie. Carrot cake cheesecake I love I love liquorice cheesecake. Bonbon candy canes brownie bear claw liquorice halvah.Sweet roll jelly I love chupa chups fruitcake cupcake. I love cheesecake shortbread I love candy canes I love. Icing pastry cupcake I love halvah shortbread. Sweet topping I love jelly beans pastry lemon drops.Cake wafer tiramisu I love sweet roll soufflé tart I love liquorice. Lemon drops chocolate caramels icing jelly-o caramels I love. I love cake gingerbread dragée tiramisu bear claw tootsie roll macaroon. Pudding caramels gingerbread I love tiramisu.</p>
+       </section> 
+	</div>
+	<div class= "sports-article">
+		<section>
+		   <h2>Sports</h2>
+		   <nav>
+			<ul>
+				<li><a href="#">Soccer</a></li>
+				<li><a href="#">Football</a></li>
+				<li><a href="#">MLB</a></li>
+				<li><a href="#">NFL</a></li>
+				<li><a href="#">NHL</a></li>
+			</ul>
+			</nav>	
+		   <img id= "cyber" src="assets/front-page-article.png" alt="placeholder">
+		 	<p>Brownie I love cake dragée jelly beans candy canes wafer tiramisu I love. Jelly icing sesame snaps biscuit I love carrot cake cookie. Carrot cake cheesecake I love I love liquorice cheesecake. Bonbon candy canes brownie bear claw liquorice halvah.Sweet roll jelly I love chupa chups fruitcake cupcake. I love cheesecake shortbread I love candy canes I love. Icing pastry cupcake I love halvah shortbread. Sweet topping I love jelly beans pastry lemon drops.Cake wafer tiramisu I love sweet roll soufflé tart I love liquorice. Lemon drops chocolate caramels icing jelly-o caramels I love. I love cake gingerbread dragée tiramisu bear claw tootsie roll macaroon. Pudding caramels gingerbread I love tiramisu.</p>
+		</section> 
+	 </div>
+
     <hr/>
     <footer>
       <div>© 2021 The Hacker Times</div>
